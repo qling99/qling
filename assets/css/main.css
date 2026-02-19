@@ -3312,6 +3312,14 @@ input, select, textarea {
 		text-align: center;
 		z-index: 1;
 		min-height: 100vh;
+		background-attachment: fixed;
+    /* 重点：路径必须是 ../../images/ 后面接大写的 .JPG */
+    	background-image: url("../../images/overlay.png"), url("../../images/background.JPG");
+    	background-position: center center;
+    	background-repeat: no-repeat;
+    /* 解决手机显示不全的关键：cover 确保图片等比例填满屏幕 */
+    	background-size: auto, cover;
+}
 	}
 
 		#intro input, #intro select, #intro textarea {
@@ -4688,3 +4696,4 @@ input, select, textarea {
 		}
 
 	}
+
