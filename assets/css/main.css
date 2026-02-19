@@ -4696,4 +4696,16 @@ input, select, textarea {
 		}
 
 	}
+/* 适配移动端 */
+@media screen and (max-width: 736px) {
+    #intro {
+        /* 手机上背景建议设为 scroll，体验更顺滑 */
+        background-attachment: scroll !important;
+        /* 强制图片中心对齐，确保主要人物/景色在中间 */
+        background-position: center center !important;
+        /* 再次确保 cover 生效 */
+        background-size: auto, cover !important;
+    }
+}
+
 
